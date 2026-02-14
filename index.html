@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eren Simsek</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=Karla:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        // Check local storage immediately
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+</head>
+<body>
+    <div class="theme-switcher">
+        <button class="theme-button light" data-theme="light" data-label="Light" aria-label="Light theme"></button>
+        <button class="theme-button sepia" data-theme="sepia" data-label="Sepia" aria-label="Sepia theme"></button>
+        <button class="theme-button dark active" data-theme="dark" data-label="Dark" aria-label="Dark theme"></button>
+    </div>
+
+    <nav class="contents-nav">
+        <div class="contents-dot" data-section="projects" data-label="Projects & Repos"></div>
+        <div class="contents-dot" data-section="skills" data-label="Skills"></div>
+        <div class="contents-dot" data-section="education" data-label="Education"></div>
+        <div class="contents-dot" data-section="certifications" data-label="Certifications"></div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Eren Simsek</h1>
+            <div class="subtitle">Computer Science Undergraduate Student (3rd Year)</div>
+            <p class="bio">
+                I'm a computer science student with a strong interest in software engineering and artificial intelligence. I enjoy building things from scratch, learning how systems work at a deep level, and constantly pushing my technical limits.
+            </p>
+            <div class="contact">
+                <a href="https://simsek.ai">simsek.ai</a>
+                <a href="mailto:erensimsek22@outlook.com">erensimsek22@outlook.com</a>
+                <a href="https://www.linkedin.com/in/simsekeren/">LinkedIn</a>
+                <a href="https://github.com/simsekeren">GitHub</a>
+                <a href="https://www.kaggle.com/simsekeren">Kaggle</a>
+                <a href="https://huggingface.co/erensimsek">Hugging Face</a>
+            </div>
+        </header>
+
+        <main>
+            <section id="projects">
+                <h2>Projects & Repos</h2>
+
+                <div class="item">
+                    <div class="item-title"><a href="https://github.com/simsekeren/hackerrank-solutions" target="_blank">HackerRank Solutions (GitHub Repo)</a></div>
+                    <p class="item-description">
+                        A GitHub repository for my HackerRank challenge solutions in Python language.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <div class="item-title"><a href="https://tubitak.gov.tr/en/scholarships/degree-associate-degree/destek-programlari/2209-research-project-support-programme-undergraduate-students" target="_blank">Map-Based Urban Issue Reporting Platform (Mobile App)</a></div>
+                    <p class="item-description">
+                        A mobile application project supported by TÜBİTAK (The Scientific and Technological Research Council of Türkiye) under the 2209-A Program.
+                    </p>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-title">Tech Stack</div>
+                        <ul class="skill-list">
+                            <li>Python</li>
+                            <li>C</li>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>Git</li>
+                            <li>LaTeX</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-title">AI Stack</div>
+                        <ul class="skill-list">
+                            <li>NumPy</li>
+                            <li>pandas</li>
+                            <li>Matplotlib</li>
+                            <li>scikit-learn</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+
+                <div class="item">
+                    <div class="item-header">
+                        <div class="item-title">B.S. in Computer Science</div>
+                        <div class="item-subtitle">Cukurova University</div>
+                    </div>
+                    <div class="item-meta">2023 - Present</div>
+                    <p class="item-description">
+                        CGPA: 3.75/4.00, High Honor Student (all semesters)
+                    </p>
+                </div>
+            </section>
+
+            <section id="certifications">
+                <h2>Certifications</h2>
+
+                <div class="item">
+                    <div class="publication-title">
+                        <a href="https://cs50.harvard.edu/certificates/b796e5a5-fb28-4903-a670-00c4aab20f98">CS50P - Introduction to Programming with Python</a>
+                    </div>
+                    <div class="item-subtitle">Harvard University</div>
+                    <div class="item-meta">Issued: January 2026</div>
+                </div>
+
+                <div class="item">
+                    <div class="publication-title">
+                        <a href="https://cs50.harvard.edu/certificates/201527df-968e-4c5e-a335-f5464395f57c">CS50x - Introduction to Computer Science</a>
+                    </div>
+                    <div class="item-subtitle">Harvard University</div>
+                    <div class="item-meta">Issued: May 2025</div>
+                </div>
+
+                <div class="item">
+                    <div class="publication-title">
+                        <a href="https://cs50.harvard.edu/certificates/b9c218d2-3610-4d1c-9866-5ffead4717f5">CS50T - Understanding Technology</a>
+                    </div>
+                    <div class="item-subtitle">Harvard University</div>
+                    <div class="item-meta">Issued: July 2024</div>
+                </div>
+
+                <div class="item">
+                    <div class="publication-title">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/RVVM8U9YZPEC">Problem Solving Using Computational Thinking</a>
+                    </div>
+                    <div class="item-subtitle">University of Michigan</div>
+                    <div class="item-meta">Issued: June 2021</div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            © 2026 Eren Simsek
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
