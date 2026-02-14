@@ -421,9 +421,18 @@ footer {
         right: 1rem;
     }
 
-    .theme-button::after,
-    .contents-dot::after {
+    .theme-button::after {
         display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+    
+    .theme-button:hover::after,
+    .theme-button:active::after,
+    .theme-button:focus::after {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
     }
 
     .contents-nav {
