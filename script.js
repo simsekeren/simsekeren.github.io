@@ -13,16 +13,6 @@ themeButtons.forEach(button => {
 
         // Save preference
         localStorage.setItem('theme', theme);
-
-        // Hide label on mobile after selection
-        if (window.innerWidth <= 600) {
-            button.blur(); // Remove focus to hide the label
-            // Or force hide with CSS class
-            button.classList.add('label-hidden');
-            setTimeout(() => {
-                button.classList.remove('label-hidden');
-            }, 500);
-        }
     });
 });
 

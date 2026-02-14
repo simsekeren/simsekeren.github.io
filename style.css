@@ -397,11 +397,6 @@ footer {
     font-size: 0.85rem;
 }
 
-.theme-button.label-hidden::after {
-    opacity: 0 !important;
-    transition: opacity 0.3s ease;
-}
-
 @media (max-width: 600px) {
     .container {
         padding: 3rem 1.5rem;
@@ -426,9 +421,9 @@ footer {
         right: 1rem;
     }
 
-    .theme-button:active::after {
-        opacity: 0;
-        transition: opacity 0.2s ease;
+    .theme-button::after,
+    .contents-dot::after {
+        display: none !important;
     }
 
     .contents-nav {
